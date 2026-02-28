@@ -44,33 +44,27 @@ export default function CustomerCards({
             </div>
           </div>
 
-          <div className="mt-4 grid grid-cols-3 divide-x divide-gray-100 rounded-lg bg-gray-50 text-center">
-            <div className="px-2 py-3">
-              <div className="flex items-center justify-center gap-1 text-xs text-gray-500">
+          <div className="mt-4 divide-y divide-gray-100 rounded-lg bg-gray-50">
+            <div className="flex items-center justify-between px-4 py-3">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
                 <DocumentTextIcon className="h-3.5 w-3.5" />
                 <span>Invoices</span>
               </div>
-              <p className="mt-1 font-semibold text-gray-900">
-                {customer.total_invoices}
-              </p>
+              <p className="font-semibold text-gray-900">{customer.total_invoices}</p>
             </div>
-            <div className="px-2 py-3">
-              <div className="flex items-center justify-center gap-1 text-xs text-gray-500">
+            <div className="flex items-center justify-between px-4 py-3">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
                 <ClockIcon className="h-3.5 w-3.5" />
                 <span>Pending</span>
               </div>
-              <p className="mt-1 font-semibold text-yellow-600">
-                {customer.total_pending}
-              </p>
+              <p className="font-semibold text-yellow-600">{customer.total_pending}</p>
             </div>
-            <div className="px-2 py-3">
-              <div className="flex items-center justify-center gap-1 text-xs text-gray-500">
+            <div className="flex items-center justify-between px-4 py-3">
+              <div className="flex items-center gap-2 text-xs text-gray-500">
                 <CheckCircleIcon className="h-3.5 w-3.5" />
                 <span>Paid</span>
               </div>
-              <p className="mt-1 font-semibold text-green-600">
-                {customer.total_paid}
-              </p>
+              <p className="font-semibold text-green-600">{customer.total_paid}</p>
             </div>
           </div>
 
